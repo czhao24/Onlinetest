@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="FirstPage">
+<head>
+    <meta charset="UTF-8">
+    <title>Page2</title>
+    <link rel="stylesheet" href="src/bootstrap.css"/>
+    <link rel="stylesheet" href="src/bootstrap-theme.css"/>
+</head>
+<body ng-controller="FirstCtrl">
+<table>
+    <tr>{{num6.question}}</tr>
+    <tr ng-repeat="answer in  num6.answers">
+        <td>{{answer.option}}</td>
+        <td><input type="checkbox" ng-model="answer.done" />{{answer.done}}</td>
+    </tr>
+</table>
+<table>
+    <tr>{{num7.question}}</tr>
+    <tr ng-repeat="answer in  num7.answers">
+        <td>{{answer.option}}</td>
+        <td><input type="checkbox" ng-model="answer.done" />{{answer.done}}</td>
+    </tr>
+</table>
+<table>
+    <tr>{{num8.question}}</tr>
+    <tr ng-repeat="answer in  num8.answers">
+        <td>{{answer.option}}</td>
+        <td><input type="checkbox" ng-model="answer.done" />{{answer.done}}</td>
+    </tr>
+</table>
+<table>
+    <tr>{{num9.question}}</tr>
+    <tr ng-repeat="answer in  num9.answers">
+        <td>{{answer.option}}</td>
+        <td><input type="checkbox" ng-model="answer.done" />{{answer.done}}</td>
+    </tr>
+</table>
+<table>
+    <tr>{{num10.question}}</tr>
+    <tr ng-repeat="answer in  num10.answers">
+        <td>{{answer.option}}</td>
+        <td><input type="checkbox" ng-model="answer.done" />{{answer.done}}</td>
+    </tr>
+</table>
+<button class="col-md-1"  class="btn btn-success" ng-click="submit2a()">Previous</button>
+<button class="col-md-1"  class="btn btn-success" ng-click="submit2b()">Next</button>
+
+
+
+
+
+
+
+
+<script src="src/angular.min.js"></script>
+<script src="src/ui-bootstrap-tpls-0.13.3.min.js"></script>
+<script src="js/firstpage.js"></script>
+</body>
